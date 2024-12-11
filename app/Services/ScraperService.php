@@ -68,13 +68,13 @@ class ScraperService
 
         return [
             'name' => $name,
-            'mayor' => $infoBox->filter('table:nth-of-type(2) tr:nth-of-type(8) td:nth-of-type(2)')->text(),
-            'address' => $address,
-            'phone' => $infoBox->filter('table:first-of-type tr:nth-of-type(3) td:nth-of-type(4)')->text(),
-            'fax' => $infoBox->filter('table:first-of-type tr:nth-of-type(4) td:nth-of-type(3)')->text(),
-            'email' => implode(', ', $emails),
-            'web' => $infoBox->filter('table:first-of-type tr:nth-of-type(6) td:nth-of-type(3)')->text(),
-            'coat-of-arms' => $infoBox->filter('table:first-of-type tr:nth-of-type(3) img')->attr('src'),
+            'mayor_name' => $infoBox->filter('table:nth-of-type(2) tr:nth-of-type(8) td:nth-of-type(2)')->text(),
+            'city_hall_address' => $address,
+            'phone' => $infoBox->filter('table:first-of-type tr:nth-of-type(3) td:nth-of-type(4)')->text() ?: null,
+            'fax' => $infoBox->filter('table:first-of-type tr:nth-of-type(4) td:nth-of-type(3)')->text() ?: null,
+            'email' => implode(', ', $emails) ?: null,
+            'web' => $infoBox->filter('table:first-of-type tr:nth-of-type(6) td:nth-of-type(3)')->text() ?: null,
+            'coat_of_arms' => $infoBox->filter('table:first-of-type tr:nth-of-type(3) img')->attr('src') ?: null,
         ];
     }
 

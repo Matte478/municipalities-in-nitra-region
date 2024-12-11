@@ -3,6 +3,7 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
+use App\Actions\ImportCities;
 
 class ImportData extends Command
 {
@@ -25,6 +26,8 @@ class ImportData extends Command
      */
     public function handle()
     {
-        //
+        app(ImportCities::class)();
+
+        $this->info('Data import has been queued.');
     }
 }
