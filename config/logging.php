@@ -132,6 +132,12 @@ return [
             'path' => storage_path('logs/import.log'),
             'level' => 'debug',
         ],
+
+        'geocoding' => [
+            'driver' => 'single',
+            'path' => storage_path('logs/geocoding.log'),
+            'level' => 'debug',
+        ]
     ],
 
 ];

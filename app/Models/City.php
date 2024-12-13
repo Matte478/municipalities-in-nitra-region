@@ -20,5 +20,7 @@ class City extends Model
         'email',
         'web',
         'coat_of_arms_path',
+        'latitude',
+        'longitude',
     ];
 }
