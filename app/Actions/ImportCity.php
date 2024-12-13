@@ -15,7 +15,7 @@ class ImportCity
         $cityData = app(ScraperService::class)->scrapeCity($url);
 
         if ($cityData['coat_of_arms']) {
-            $publicFolder = "coat_of_arms";
+            $publicFolder = 'coat_of_arms';
             try {
                 $filename = app(SaveFileFromUrl::class)($cityData['coat_of_arms'], $publicFolder, ['jpg', 'jpeg', 'png', 'gif']);
                 $cityData['coat_of_arms_path'] = "/$publicFolder/{$filename}";

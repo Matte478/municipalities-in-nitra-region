@@ -13,10 +13,10 @@ class SaveFileFromUrl
     {
         $filename = basename($url);
 
-        if($allowedExtensions) {
+        if ($allowedExtensions) {
             $extension = pathinfo($filename, PATHINFO_EXTENSION);
 
-            if (!in_array($extension, $allowedExtensions, true)) {
+            if (! in_array($extension, $allowedExtensions, true)) {
                 throw new InvalidExtensionException("The extension '{$extension}' is not allowed.");
             }
         }

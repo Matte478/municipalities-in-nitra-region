@@ -137,7 +137,7 @@ return [
             'driver' => 'single',
             'path' => storage_path('logs/geocoding.log'),
             'level' => 'debug',
-        ]
+        ],
     ],
 
 ];

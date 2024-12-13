@@ -14,8 +14,10 @@ class ImportCities
     public function __invoke(): void
     {
         $subDistricts = $this->scraper->scrapeSubDistricts();
-        $citiesList = collect($subDistricts)->map(fn($subDistrict) => $this->scraper->scrapeCities($subDistrict['url']))->flatten(1);
+        $citiesList = collect($subDistricts)->map(
+            fn ($subDistrict) => $this->scraper->scrapeCities($subDistrict['url'])
+        )->flatten(1);
 
-        collect($citiesList)->each(fn($city) => ImportCity::dispatch($city['url']));
+        collect($citiesList)->each(fn ($city) => ImportCity::dispatch($city['url']));
     }
 }

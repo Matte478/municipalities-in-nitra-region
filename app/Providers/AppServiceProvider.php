@@ -33,8 +33,8 @@ class AppServiceProvider extends ServiceProvider
             return Http::baseUrl(config('services.google_geocode.url'))
                 ->withOptions([
                     'query' => [
-                        'key' => config('services.google_geocode.api_key')
-                    ]
+                        'key' => config('services.google_geocode.api_key'),
+                    ],
                 ]);
         });
     }

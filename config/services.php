@@ -38,5 +38,5 @@ return [
     'google_geocode' => [
         'url' => env('GOOGLE_GEOCODE_URL'),
         'api_key' => env('GOOGLE_GEOCODE_API_KEY'),
-    ]
+    ],
 ];

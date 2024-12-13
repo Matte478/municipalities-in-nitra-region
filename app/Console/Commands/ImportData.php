@@ -2,8 +2,8 @@
 
 namespace App\Console\Commands;
 
-use Illuminate\Console\Command;
 use App\Actions\ImportCities;
+use Illuminate\Console\Command;
 
 class ImportData extends Command
 {

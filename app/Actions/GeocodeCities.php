@@ -9,6 +9,8 @@ class GeocodeCities
 {
     public function __invoke(): void
     {
-        collect(City::all())->each(fn($city) => GeocodeCity::dispatch($city));
+        collect(City::all())->each(
+            fn ($city) => GeocodeCity::dispatch($city)
+        );
     }
 }

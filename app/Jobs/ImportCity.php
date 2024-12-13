@@ -2,9 +2,9 @@
 
 namespace App\Jobs;
 
+use App\Actions\ImportCity as ImportCityAction;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Queue\Queueable;
-use App\Actions\ImportCity as ImportCityAction;
 
 class ImportCity implements ShouldQueue
 {

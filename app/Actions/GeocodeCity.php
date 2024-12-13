@@ -11,7 +11,7 @@ class GeocodeCity
     {
         $coordinates = app(GeocodingProvider::class)->getCoordinates($city->city_hall_address);
 
-        if (!$coordinates) {
+        if (! $coordinates) {
             return;
         }
 

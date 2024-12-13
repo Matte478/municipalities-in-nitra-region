@@ -22,7 +22,7 @@ class GoogleGeocodingProvider implements GeocodingProvider
 
         $location = $response['results'][0]['geometry']['location'] ?? null;
 
-        if (!$location) {
+        if (! $location) {
             return null;
         }
 

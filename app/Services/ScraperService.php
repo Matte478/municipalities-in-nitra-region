@@ -59,7 +59,7 @@ class ScraperService
         $name = preg_replace(['/^Obec /', '/^Mesto /'], '', $name);
 
         $address = $infoBox->filter('table:first-of-type tr:nth-of-type(5) td:first-of-type')->text();
-        $address .= ', ' . $infoBox->filter('table:first-of-type tr:nth-of-type(6) td:first-of-type')->text();
+        $address .= ', '.$infoBox->filter('table:first-of-type tr:nth-of-type(6) td:first-of-type')->text();
 
         $emails = [];
         $infoBox->filter('table:first-of-type tr:nth-of-type(5) td:nth-of-type(3) a')->each(function (Crawler $email) use (&$emails) {
