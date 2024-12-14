@@ -1,0 +1,10 @@
+@mixin font-size($sizeValue: 16, $line-height: null) {
+    font-size: $sizeValue * 1px;
+    font-size: calc($sizeValue / 10) * 1rem;
+
+    @if $line-height == 0 {
+        line-height: $line-height;
+    } @else if $line-height != null {
+        line-height: calc($line-height / $sizeValue) * 1em;
+    }
+}
