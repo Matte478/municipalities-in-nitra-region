@@ -18,7 +18,7 @@ class ImportCity
             $publicFolder = 'coat_of_arms';
             try {
                 $filename = app(SaveFileFromUrl::class)($cityData['coat_of_arms'], $publicFolder, ['jpg', 'jpeg', 'png', 'gif']);
-                $cityData['coat_of_arms_path'] = "/$publicFolder/{$filename}";
+                $cityData['coat_of_arms_path'] = "/storage/$publicFolder/{$filename}";
             } catch (FileExistsException) {
             } catch (Throwable) {
                 Log::channel('import')->error("Unable to download coat of arms for {$cityData['name']} from {$cityData['coat_of_arms']}.");

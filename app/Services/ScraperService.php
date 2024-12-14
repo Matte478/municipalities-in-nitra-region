@@ -66,14 +66,19 @@ class ScraperService
             $emails[] = $email->text();
         });
 
+        $webAddresses = [];
+        $infoBox->filter('table:first-of-type tr:nth-of-type(6) td:nth-of-type(3) a')->each(function (Crawler $web) use (&$webAddresses) {
+            $webAddresses[] = $web->text();
+        });
+
         return [
             'name' => $name,
             'mayor_name' => $infoBox->filter('table:nth-of-type(2) tr:nth-of-type(8) td:nth-of-type(2)')->text(),
             'city_hall_address' => $address,
             'phone' => $infoBox->filter('table:first-of-type tr:nth-of-type(3) td:nth-of-type(4)')->text() ?: null,
             'fax' => $infoBox->filter('table:first-of-type tr:nth-of-type(4) td:nth-of-type(3)')->text() ?: null,
-            'email' => implode(', ', $emails) ?: null,
-            'web' => $infoBox->filter('table:first-of-type tr:nth-of-type(6) td:nth-of-type(3)')->text() ?: null,
+            'email' => implode(',', $emails) ?: null,
+            'web' => implode(',', $webAddresses) ?: null,
             'coat_of_arms' => $infoBox->filter('table:first-of-type tr:nth-of-type(3) img')->attr('src') ?: null,
         ];
     }
