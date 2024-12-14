@@ -1,6 +1,7 @@
 .header {
     $header: &;
     padding-top: 2rem;
+    border-bottom: 1px solid $gray;
 
     &__logo {
         width: 150px;

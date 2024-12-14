@@ -28,13 +28,21 @@ img {
     vertical-align: middle;
 }
 
+address {
+    margin-bottom: 0;
+}
+
 .text-primary {
     color: $primary;
 }
 
 .section {
     position: relative;
-    padding: 4rem 0;
+    padding: 3rem 0 6rem;
+
+    @include media-breakpoint-down(sm) {
+        padding-bottom: 4rem;
+    }
 
     &__title {
         margin-bottom: 0;

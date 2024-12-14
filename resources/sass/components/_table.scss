@@ -1,0 +1,10 @@
+.table {
+    &__head,
+    &__data {
+        padding: 0.25rem 1rem;
+
+        @include media-breakpoint-down(lg) {
+            padding: 0.25rem 0.5rem;
+        }
+    }
+}

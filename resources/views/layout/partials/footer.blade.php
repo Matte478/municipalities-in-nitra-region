@@ -11,7 +11,7 @@
                     </address>
                     <p class="footer__item">
                         Ústredňa<br/>
-                        <a href="tel:+421-2-50701 111">+421-2-50701 111</a>
+                        <a href="tel:+421250701111">+421-2-50701 111</a>
                     </p>
                 </div>
                 <div class="footer__category">
