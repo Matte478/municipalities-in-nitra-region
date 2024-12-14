@@ -46,7 +46,15 @@ address {
 
     &__title {
         margin-bottom: 0;
-        text-align: center;
+        font-size: 2.5rem;
         font-weight: 300;
+        text-align: center;
+
+        @include media-breakpoint-down(md) {
+            font-size: 2rem;
+        }
+        @include media-breakpoint-down(sm) {
+            font-size: 1.8rem;
+        }
     }
 }
