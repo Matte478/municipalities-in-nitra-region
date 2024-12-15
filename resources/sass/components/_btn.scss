@@ -1,0 +1,13 @@
+.btn {
+    padding: 0.5rem 2rem;
+    color: $white;
+    background-color: $secondary;
+    transition: all 0.2s ease-in-out;
+    border-radius: 0.375rem;
+
+    &:hover {
+        background-color: darken($secondary, 5%);
+        text-decoration: none;
+        color: $white;
+    }
+}

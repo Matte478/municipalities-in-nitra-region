@@ -2,6 +2,8 @@
 
 return [
 
+    'geocoding_provider' => env('GEOCODING_PROVIDER', 'google'),
+
     /*
     |--------------------------------------------------------------------------
     | Application Name
