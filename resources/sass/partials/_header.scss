@@ -32,7 +32,7 @@
     &__lang-switcher {
         position: relative;
         display: block;
-        padding-right: 1.5rem;
+        padding-right: 1rem;
         line-height: 1;
 
         &:after {
@@ -59,7 +59,7 @@
 
             &_icon {
                 position: absolute;
-                height: 1.5rem;
+                height: 1rem;
                 right: 1rem;
                 top: 50%;
                 transform: translateY(-50%);
@@ -69,7 +69,7 @@
         }
 
         #{$header}__input {
-            padding-right: 3rem;
+            padding-right: 2.5rem;
         }
     }
 

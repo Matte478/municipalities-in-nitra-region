@@ -9,7 +9,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-6 col-xl-5 mx-auto">
+                <div class="col-md-8 col-lg-6 col-xl-5 mx-auto">
                     <div class="input-group">
                         <input id="search-input" type="text" class="form-control search__input awesomplete"
                             data-suqqestion-url="{{ route('suggestion') }}" placeholder="Zadajte názov" />

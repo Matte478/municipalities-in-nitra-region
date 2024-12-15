@@ -10,16 +10,16 @@
             </div>
             <div class="card">
                 <div class="row">
-                    <div class="col-md-6 order-md-2">
+                    <div class="col-md-5 col-lg-6 order-md-2">
                         <div class="card__name">
                             @if ($city->coat_of_arms_path)
                                 <img class="card__name_image" src="{{ $city->coat_of_arms_path }}"
-                                    alt="{{ $city->name }}" />
+                                    alt="Erb {{ $city->name }}" />
                             @endif
                             <h1 class="card__name_title">{{ $city->name }}</h1>
                         </div>
                     </div>
-                    <div class="col-md-6 order-md-1">
+                    <div class="col-md-7 col-lg-6 order-md-1">
                         <div class="card__info">
                             <table class="table card__info_table">
                                 <tr>

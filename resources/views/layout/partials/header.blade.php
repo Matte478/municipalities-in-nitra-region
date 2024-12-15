@@ -15,7 +15,7 @@
                         <div class="d-flex flex-row gap-2 gap-sm-3 align-items-center w-100">
                             <form class="header__form w-100 w-sm-auto" action="#" method="GET">
                                 <div class="input-group header__input-group">
-                                    <input type="text" class="form-control header__input" />
+                                    <input type="text" class="form-control header__input rounded" />
                                     <img class="header__input-group_icon"
                                         src="{{ Vite::asset('resources/images/icon-magnifying-glass.svg') }}"
                                         alt="icon" />
