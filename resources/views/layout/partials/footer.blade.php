@@ -5,12 +5,12 @@
                 <div class="footer__category">
                     <p class="footer__title">Adresa a kontakt</p>
                     <address class="footer__address">
-                        ŠÚKL<br/>
-                        Kvetná 11<br/>
-                        825 08 Bratislava 26<br/>
+                        ŠÚKL<br />
+                        Kvetná 11<br />
+                        825 08 Bratislava 26<br />
                     </address>
                     <p class="footer__item">
-                        Ústredňa<br/>
+                        Ústredňa<br />
                         <a href="tel:+421250701111">+421-2-50701 111</a>
                     </p>
                 </div>
@@ -103,7 +103,8 @@
                 <div class="footer__category footer__category--highlighted">
                     <p class="footer__title">Rapid alert system</p>
                     <ul class="footer__links">
-                        <li class="footer__link"><a href="#">Rýchla výstraha vyplývajúca z nedostatkov v kvalite liekov</a></li>
+                        <li class="footer__link"><a href="#">Rýchla výstraha vyplývajúca z nedostatkov v kvalite
+                                liekov</a></li>
                     </ul>
                 </div>
             </div>

@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Databáza obcí</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        @vite(['resources/sass/app.scss', 'resources/js/app.js'])
-    </head>
-    <body>
-        @include('layout.partials.header')
+    <title>Databáza obcí</title>
 
-        <main>
-            @yield('content')
-        </main>
+    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+</head>
 
-        @include('layout.partials.footer')
-    </body>
+<body>
+    @include('layout.partials.header')
+
+    <main>
+        @yield('content')
+    </main>
+
+    @include('layout.partials.footer')
+</body>
+
 </html>

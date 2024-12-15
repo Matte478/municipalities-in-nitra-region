@@ -22,7 +22,7 @@ class SuggestionRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'query' => ['required', 'string', 'min:3']
+            'query' => ['required', 'string', 'min:3'],
         ];
     }
 }
