@@ -3,6 +3,7 @@
 ## Requirements
 - PHP >= 8.2
 - Composer
+- npm
 - MySQL
 
 ## Installation
@@ -39,7 +40,15 @@ php artisan migrate
 php artisan storage:link
 ```
 
-### 6. Install npm dependencies and build front-end assets
+### 6. Start a queue worker
+Local development:
+```bash
+php artisan queue:work
+```
+
+Production: You can use [Supervisor](https://laravel.com/docs/11.x/queues#supervisor-configuration)
+
+### 7. Install npm dependencies and build front-end assets
 
 ```
 npm install
