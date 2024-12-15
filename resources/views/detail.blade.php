@@ -16,7 +16,7 @@
                                 <img class="card__name_image" src="{{ $city->coat_of_arms_path }}"
                                     alt="Erb {{ $city->name }}" />
                             @endif
-                            <h1 class="card__name_title">{{ $city->name }}</h1>
+                            <h2 class="card__name_title">{{ $city->name }}</h2>
                         </div>
                     </div>
                     <div class="col-md-7 col-lg-6 order-md-1">
