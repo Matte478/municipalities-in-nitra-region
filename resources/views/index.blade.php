@@ -10,11 +10,9 @@
         </div>
         <div class="row">
             <div class="col-lg-6 col-xl-5 mx-auto">
-                <form class="search__form" action="#" method="GET">
-                    <div class="input-group">
-                        <input type="text" class="form-control search__input" placeholder="Zadajte názov" />
-                    </div>
-                </form>
+                <div class="input-group">
+                    <input id="search-input" type="text" class="form-control search__input awesomplete" data-suqqestion-url="{{ route('suggestion') }}" placeholder="Zadajte názov" />
+                </div>
             </div>
         </div>
     </div>
